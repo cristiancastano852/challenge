@@ -3,8 +3,7 @@ import pandas as pd
 from ..model import DelayModel
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
-from challenge.model import DelayModel
-from ...model import DelayModel
+from ..model import DelayModel
 
 class TestModel(unittest.TestCase):
 
