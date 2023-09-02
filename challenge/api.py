@@ -41,7 +41,7 @@ async def post_predict(codigo: FlightData) -> dict:
                 return {"predict":  predictions}
 
 def initialize_model():
-    data = pd.read_csv(filepath_or_buffer="../data/data.csv")
+    data = pd.read_csv(filepath_or_buffer="./data/data.csv")
     model = DelayModel()
     features, target = model.preprocess(
         data=data,
