@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set root directory
+        run: echo "::set-env name=ROOT_DIR::/home/runner/work/challenge-Latam/challenge"
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
