@@ -8,10 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    env:
-      ROOT_DIR: /home/runner/work/challenge-Latam/challenge
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
