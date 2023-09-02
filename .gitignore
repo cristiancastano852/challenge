@@ -1,0 +1,4 @@
+__pycache__/
+.pytest_cache
+challenge/api-probando-py
+data/data-test.csv
