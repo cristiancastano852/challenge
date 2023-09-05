@@ -1,10 +1,7 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 from datetime import datetime
 import xgboost as xgb
-from sklearn.metrics import confusion_matrix, classification_report
 from typing import Tuple, Union, List
 
 class DelayModel:
