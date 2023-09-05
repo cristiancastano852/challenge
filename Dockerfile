@@ -6,6 +6,7 @@ WORKDIR /challenge
 ENV PYTHONPATH=/challenge
 
 COPY ./challenge /challenge
+COPY ./challenge/model.py /challenge/challenge/model.py
 
 COPY ./requirements.txt /challenge/requirements.txt 
 COPY ./data/data.csv /challenge/data/data.csv
