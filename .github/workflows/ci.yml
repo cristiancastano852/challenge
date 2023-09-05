@@ -29,3 +29,9 @@ jobs:
       - name: Run API Tests
         run: |
           make api-test
+      - name: Build Docker image
+        run: |
+          docker build -t chellenge-image:ci-${{ github.sha }} .
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker push chellenge-image:ci-${{ github.sha }}
+          docker logout
