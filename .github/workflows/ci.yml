@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop
+      - feature/add-ci-cd
 
 jobs:
   build:
@@ -31,7 +32,7 @@ jobs:
           make api-test
       - name: Build Docker image
         run: |
-          docker build -t chellenge-image:ci-${{ github.sha }} .
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push chellenge-image:ci-${{ github.sha }}
+          docker build -t challenge-image:ci-${{ github.sha }} .
+          echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
+          docker push challenge-image:ci-${{ github.sha }}
           docker logout
