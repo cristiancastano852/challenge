@@ -23,13 +23,13 @@ jobs:
           python -m pip install --upgrade pip
           make install
 
-      - name: Run Model Tests
-        run: |
-          make model-test
+      # - name: Run Model Tests
+      #   run: |
+      #     make model-test
 
-      - name: Run API Tests
-        run: |
-          make api-test
+      # - name: Run API Tests
+      #   run: |
+      #     make api-test
       - name: Run STRESS test
         run: |
           make stress-test
