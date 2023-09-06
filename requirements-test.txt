@@ -1,6 +1,7 @@
 pytest~=6.2.5
 pytest-cov~=2.12.1
 locust~=1.6
+locustio~=2.10.1
 coverage~=5.5
 mockito~=1.2.2
 anyio~=3.6.1
