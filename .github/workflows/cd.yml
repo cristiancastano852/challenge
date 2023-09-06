@@ -8,11 +8,11 @@ on:
 
 env:
   AWS_REGION: us-east-1 # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: challenge-repo # set this to your Amazon ECR repository name
-  ECS_SERVICE: service-challenge-app # set this to your Amazon ECS service name
-  ECS_CLUSTER: cluster-challenge # set this to your Amazon ECS cluster name
+  ECR_REPOSITORY: repos-challenge # set this to your Amazon ECR repository name
+  ECS_SERVICE: servi-app # set this to your Amazon ECS service name
+  ECS_CLUSTER: challe-cluster-app # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: task_definition.json # set this to the path to your Amazon ECS task definition
-  CONTAINER_NAME: app-challenge # set this to the name of the container in the Amazon ECS
+  CONTAINER_NAME: challe-app # set this to the name of the container in the Amazon ECS
 
 permissions:
   contents: read
